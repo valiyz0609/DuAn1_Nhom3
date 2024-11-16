@@ -109,7 +109,7 @@
                     android:textAlignment="textEnd"
                     android:layout_width="match_parent"
                     android:text="0 VNĐ"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     />

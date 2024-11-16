@@ -12,7 +12,7 @@
         <TextView
             android:id="@+id/txtSPHomeTittle"
             style="@style/edt_Label"
-            android:text="Cà phê truyền thống"
+            android:text="Đồ ăn kèm"
             android:textColor="@color/black"
             android:textStyle="bold" />
 

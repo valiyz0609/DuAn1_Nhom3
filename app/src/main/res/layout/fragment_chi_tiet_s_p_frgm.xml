@@ -12,8 +12,7 @@
             android:layout_height="60dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:background="#964B00"
-            >
+            android:background="#964B00">
             <ImageView
                 android:id="@+id/btnbackCT"
                 android:layout_width="40dp"
@@ -29,9 +28,6 @@
                 android:textAlignment="center"
                 android:layout_marginRight="30dp"
                 android:textSize="24dp"/>
-
-
-
         </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
@@ -72,14 +68,14 @@
                     <TextView
                         android:id="@+id/txtChiTietTenSp"
                         style="@style/edt_Label"
-                        android:text="Something Tên SP"
+                        android:text="Chi tiết sản phẩm"
                         android:textColor="@color/black"
                         android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/txtChiTietGiaSP"
                         style="@style/edt_Label"
-                        android:text="29.000đ"
+                        android:text="30.000đ"
                         android:textSize="20dp"
                         android:layout_marginTop="5dp"
                         android:textColor="@color/black"
@@ -109,22 +105,20 @@
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
-                                >
+                                android:gravity="center">
 
                                 <ImageView
                                     android:id="@+id/btnSoLuongGiam"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:src="@drawable/tru"
-                                    />
+                                    android:src="@drawable/tru" />
 
                                 <TextView
                                     android:id="@+id/txtChiTietSL"
                                     style="@style/edt_Label"
                                     android:layout_width="40dp"
                                     android:textAlignment="center"
-                                    android:text="88"
+                                    android:text="00"
                                     android:textColor="@color/red"
                                     android:textStyle="bold" />
 
@@ -132,14 +126,9 @@
                                     android:id="@+id/btnSoLuongTang"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:src="@drawable/sign"
-                                    />
-
+                                    android:src="@drawable/sign" />
                             </LinearLayout>
-
                         </LinearLayout>
-
-
                     </LinearLayout>
 
                     <TextView

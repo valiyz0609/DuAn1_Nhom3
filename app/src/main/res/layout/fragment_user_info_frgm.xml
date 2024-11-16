@@ -71,7 +71,7 @@
                     style="@style/edt_Label1"
                     android:layout_marginStart="8dp"
                     android:paddingBottom="3dp"
-                    android:text="AdminName"
+                    android:text="ADMIN"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView"
@@ -132,7 +132,7 @@
                     style="@style/edt_Label1"
                     android:layout_marginLeft="10dp"
                     android:paddingBottom="3dp"
-                    android:text="AdminName"
+                    android:text="Quản lý"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -177,7 +177,7 @@
                     style="@style/edt_Label1"
                     android:layout_marginLeft="10dp"
                     android:paddingBottom="3dp"
-                    android:text="2000"
+                    android:text="0000"
                     android:textColor="@color/black" />
 
             </LinearLayout>

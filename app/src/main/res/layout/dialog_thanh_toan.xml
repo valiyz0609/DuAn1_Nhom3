@@ -44,7 +44,7 @@
                 android:id="@+id/txtHDTenNV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nguyen Dat"
+                android:text="Nguyễn Đại Dương"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -67,7 +67,7 @@
                 android:id="@+id/txtHDTenKH"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nguyen Dat"
+                android:text="Nguyễn Văn A"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -90,7 +90,7 @@
                 android:id="@+id/txtHDNgayBan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="22/11/2003"
+                android:text="15/11/2024"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -103,9 +103,9 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:text="Tên Sản Phẩm"
+                android:text="Tên SP"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/white"
                 android:textSize="20dp"

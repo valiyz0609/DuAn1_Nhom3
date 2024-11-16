@@ -58,7 +58,7 @@
             <TextView
                 android:id="@+id/txtViewInfoFullName"
                 style="@style/edt_Label"
-                android:text="AdminName"
+                android:text="Nguyễn Đại Dương"
                 android:textSize="22dp"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"/>
@@ -97,7 +97,7 @@
                 android:id="@+id/txtViewInfoUserName"
                 style="@style/edt_Label"
                 android:layout_marginLeft="10dp"
-                android:text="AdminName"
+                android:text="Dương"
                 android:textColor="@color/black"
                 android:textSize="22dp" />
 
@@ -119,7 +119,7 @@
                 style="@style/edt_Label"
                 android:layout_marginLeft="10dp"
                 android:textSize="22dp"
-                android:text="AdminName"
+                android:text="Nhân Viên"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -141,7 +141,7 @@
                 style="@style/edt_Label"
                 android:layout_marginLeft="10dp"
                 android:textSize="22dp"
-                android:text="0123456789"
+                android:text="012345678"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -162,7 +162,7 @@
                 style="@style/edt_Label"
                 android:layout_marginLeft="10dp"
                 android:textSize="22dp"
-                android:text="2000"
+                android:text="2004"
                 android:textColor="@color/black" />
 
         </LinearLayout>

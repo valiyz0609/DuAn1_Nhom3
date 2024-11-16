@@ -60,7 +60,7 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="8dp"
-                        android:background="@color/primarykey"
+                        android:background="@color/white"
                         android:orientation="vertical">
 
                         <TextView
@@ -69,7 +69,7 @@
                             style="@style/edt_Label1"
                             android:text="Đăng Xuất"
                             android:layout_gravity="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textSize="20dp"/>
 
                     </LinearLayout>
