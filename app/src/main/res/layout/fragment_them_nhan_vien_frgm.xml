@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#964B00"
+            >
+
+            <ImageView
+                android:id="@+id/btnBackThemNV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/lui"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                style="@style/edt_Label"
+                android:id="@+id/txtSuaNVTittle"
+                android:layout_width="match_parent"
+                android:text="Thêm nhân viên"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/edTenNhanVien"
+                    style="@style/edt_TextBox2"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bo_edt"
+                    android:hint="Họ và tên"
+                    android:textColorHint="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <EditText
+                    android:id="@+id/edUsername"
+                    style="@style/edt_TextBox2"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bo_edt"
+                    android:hint="Tên đăng nhập"
+                    android:textColorHint="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <EditText
+                    android:id="@+id/edPassword"
+                    style="@style/edt_TextBox2"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword"
+                    android:background="@drawable/bo_edt"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/black"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edSDT"
+                    android:maxLength="10"
+                    style="@style/edt_TextBox2"
+                    android:hint="Số điện thoại"
+                    android:background="@drawable/bo_edt"
+                    android:inputType="number"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/edNamSinh"
+                    style="@style/edt_TextBox2"
+                    android:maxLength="4"
+                    android:hint="Năm sinh"
+                    android:inputType="number"
+                    android:background="@drawable/bo_edt"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            >
+
+            <EditText
+                android:id="@+id/btnHuyThemNV"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bo_tron_edt"
+                android:text="Hủy"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginRight="15dp"
+                />
+
+            <EditText
+                android:id="@+id/btnAddThemNV"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bo_tron_edt"
+                android:text="Thêm"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:editable="false"
+                android:focusable="false"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

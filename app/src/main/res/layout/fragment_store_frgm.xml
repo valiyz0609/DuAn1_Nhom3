@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentManager.StoreFrgm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/floatLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#964B00"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/iconRefreshStore"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/delete"
+                />
+
+            <TextView
+                style="@style/edt_Label"
+                android:layout_width="match_parent"
+                android:text="Giỏ hàng"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_giohang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="13dp" />
+
+        <TextView
+            android:id="@+id/txtNotifi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Vui lòng chọn sản phẩm!"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/floatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        >
+
+        <EditText
+            android:id="@+id/edtGHTenKH"
+            style="@style/edt_TextBox2"
+            android:hint="Tên khách hàng"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bo_edt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="3dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/edt_Label"
+                    android:text="Tổng thanh toán"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtGHTongTien"
+                    style="@style/edt_Label"
+                    android:textAlignment="textEnd"
+                    android:layout_width="match_parent"
+                    android:text="0 VNĐ"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/btnGioHangTT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bo_tron_edt"
+                android:text="Thanh Toán"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:editable="false"
+                android:focusable="false"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

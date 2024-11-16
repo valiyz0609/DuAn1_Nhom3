@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#964B00">
+
+        <ImageView
+            android:id="@+id/btnBackUserInfo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/lui"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            style="@style/edt_Label"
+            android:id="@+id/txtSuaNVTittle"
+            android:layout_width="match_parent"
+            android:text="Thông tin cá nhân"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:layout_marginRight="30dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bo_tron_menu"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Tên:"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtInfoFullName"
+                    style="@style/edt_Label1"
+                    android:layout_marginStart="8dp"
+                    android:paddingBottom="3dp"
+                    android:text="AdminName"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/btnInfoEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/editing"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tài khoản:"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtInfoUserName"
+                    style="@style/edt_Label1"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="Admin"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chức vụ:"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtInfoChucVu"
+                    style="@style/edt_Label1"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="AdminName"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại:"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtInfoSDT"
+                    style="@style/edt_Label1"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="0123456789"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Năm sinh:"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtInfoNamSinh"
+                    style="@style/edt_Label1"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="2000"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/userFrgmLoaisp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bo_tron_menu">
+
+            <TextView
+                style="@style/edt_Label"
+                android:layout_marginLeft="15dp"
+                android:text="Danh sách loại sản phẩm"
+                android:textColor="@color/black" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cotinue"
+                android:layout_marginRight="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userFrgmTKDoanhThu"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bo_tron_menu"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                    style="@style/edt_Label"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="Thống kê cửa hàng"
+                    android:textColor="@color/black" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cotinue"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/userFrgmTKNhanVien"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bo_tron_menu"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/edt_Label"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="3dp"
+                android:text="Danh sách nhân viên"
+                android:textColor="@color/black" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cotinue"
+                android:layout_marginRight="15dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/userFrgmDoiMK"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bo_tron_menu"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+                <TextView
+                    style="@style/edt_Label"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="Đổi Mật Khẩu"
+                    android:textColor="@color/black" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cotinue"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

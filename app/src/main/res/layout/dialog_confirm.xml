@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/primarykey"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:orientation="vertical"
+        android:background="#964B00">
+
+        <TextView
+            style="@style/edt_Label"
+            android:text="Xác Nhận"
+            android:textStyle="bold"
+            android:padding="0dp" />
+
+        <TextView
+            android:id="@+id/dialog_confirm_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Hiện chưa có thông báo nào !"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            >
+
+            <EditText
+                android:id="@+id/btnDialogHuy"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bo_tron_edt"
+                android:backgroundTint="@color/white"
+                android:text="Không"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginRight="15dp"
+                />
+
+            <EditText
+                android:id="@+id/btnDialogXN"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bo_tron_edt"
+                android:backgroundTint="@color/white"
+                android:text="Có"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:editable="false"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

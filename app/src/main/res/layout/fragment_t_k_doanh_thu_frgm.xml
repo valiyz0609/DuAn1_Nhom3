@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/floatTKDT"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#964B00"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnBackTKDT"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/lui" />
+
+            <TextView
+                style="@style/edt_Label"
+                android:id="@+id/txtSuaNVTittle"
+                android:layout_width="match_parent"
+                android:text="Thống kê doanh thu"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+
+                />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rdoTKDTGr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdoTKDTAll"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Cửa hàng"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/rdoTKDTNV"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:text="Nhân viên"
+                android:textSize="18dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/boxTenNV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/edtTKDTTenNV"
+                    style="@style/edt_TextBox2"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Nhập Tên nhân viên"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/bo_edt"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/edtTKDTStart"
+                        style="@style/edt_TextBox2"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="10dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Ngày bắt đầu"
+                        android:textColorHint="@color/black"
+                        android:background="@drawable/bo_edt"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/edtTKDTEnd"
+                        style="@style/edt_TextBox2"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="10dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Ngày kết thúc"
+                        android:textColorHint="@color/black"
+                        android:background="@drawable/bo_edt"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtThongKeDoanhThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bo_tron_edt"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="5dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="5dp"
+            android:text="Thống Kê"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/layoutListDT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/edt_Label"
+                    android:layout_marginLeft="10dp"
+                    android:text="Tên Khách hàng"
+                    android:textSize="23dp" />
+
+                <TextView
+                    style="@style/edt_Label"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="10dp"
+                    android:text="T.tiền"
+                    android:textSize="23dp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_TKDT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNotifi2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Chưa có doanh thu!"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:paddingBottom="30dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/floatTKDT"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="5dp"
+        >
+
+        <TextView
+            style="@style/edt_Label"
+            android:text="Tổng tiền thu"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtTongDoanhThu"
+            style="@style/edt_Label"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:paddingRight="20dp"
+            android:text="0"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
