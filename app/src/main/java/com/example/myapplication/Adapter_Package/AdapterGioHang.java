@@ -53,7 +53,7 @@ public class AdapterGioHang extends RecyclerView.Adapter<AdapterGioHang.ViewHold
         holder.txtGHTenSP.setText(gioHang.getTenSP() + " - " + gioHang.getSize());
         double donGia = gioHang.getDonGia();
         String outDonGia = String.format("%,.0f", donGia);
-        holder.txtGHGia.setText(outDonGia + "k");
+        holder.txtGHGia.setText(outDonGia + ""); //Bỏ chữ K
         int soLuong = gioHang.getSoLuong();
         holder.edtGHSoLuong.setText(soLuong + "");
 

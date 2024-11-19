@@ -64,15 +64,15 @@ public class AdapterTKNV extends RecyclerView.Adapter<AdapterTKNV.ViewHolder>{
             String outTongTien = String.format("%,.0f", doanhThu);
             if (outTongTien.length() > 4){
                 String subDoanhThu = outTongTien.substring(0, (outTongTien.length() - 4));
-                holder.txtTknvDoanhThu.setText(subDoanhThu + "k");
+                holder.txtTknvDoanhThu.setText(subDoanhThu + " "); //bỏ chữ K
             }
             else {
-                holder.txtTknvDoanhThu.setText(outTongTien + "k");
+                holder.txtTknvDoanhThu.setText(outTongTien + " "); //bỏ chữ K
             }
 
         }
         else {
-            holder.txtTknvDoanhThu.setText("0 k");
+            holder.txtTknvDoanhThu.setText("0"); //bỏ chữ K
         }
         if (position == (list.size() - 1)){
             holder.bottomViewTknv.setVisibility(View.GONE);

@@ -79,7 +79,7 @@ public class ChiTietSPFrgm extends Fragment {
                 if (isChecked) {
                     rdoSizeNho.setChecked(false);
                     rdoSizeVua.setChecked(false);
-                    sizeCheck = "L";
+                    sizeCheck = "M";
                     donGia = 10000;
                     tongTien = tinhTien(soLuong, donGia, donGiaGoc);
                     String mTinhTien = String.format("%,.0f", tongTien);
@@ -94,7 +94,7 @@ public class ChiTietSPFrgm extends Fragment {
                 if (isChecked) {
                     rdoSizeLon.setChecked(false);
                     rdoSizeNho.setChecked(false);
-                    sizeCheck = "M";
+                    sizeCheck = "L";
                     donGia = 5000;
                     tongTien = tinhTien(soLuong, donGia, donGiaGoc);
                     String mTinhTien = String.format("%,.0f", tongTien);
@@ -109,7 +109,7 @@ public class ChiTietSPFrgm extends Fragment {
                 if (isChecked) {
                     rdoSizeLon.setChecked(false);
                     rdoSizeVua.setChecked(false);
-                    sizeCheck = "N";
+                    sizeCheck = "S";
                     donGia = 0;
                     tongTien = tinhTien(soLuong, donGia, donGiaGoc);
                     String mTinhTien = String.format("%,.0f", tongTien);
