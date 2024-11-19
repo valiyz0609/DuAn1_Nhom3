@@ -34,6 +34,7 @@ public class DangNhapAct extends AppCompatActivity {
         setContentView(R.layout.activity_dang_nhap);
         edtUser = findViewById(R.id.edtTenDangNhap);
         edtPassword = findViewById(R.id.edtMatKhau);
+
         checkBox = findViewById(R.id.chkNhoMK);
         btnLogin = findViewById(R.id.btnDangNhap);
         img_hidePassword = findViewById(R.id.img_hidePassword);
@@ -115,6 +116,7 @@ public class DangNhapAct extends AppCompatActivity {
             editor.putBoolean("REMEMBER", status);
         }
         editor.commit();
+
     }
 
     private void closeKeyboard() {

@@ -100,6 +100,5 @@ public class DbHelper extends SQLiteOpenHelper {
         db.execSQL(dropLuuHoaDon);
         String dropGioHang = "drop table if exists GioHang";
         db.execSQL(dropGioHang);
-    }
-
+    }s
 }
