@@ -67,7 +67,7 @@ public class AdapterSanPham extends RecyclerView.Adapter<AdapterSanPham.UserView
         holder.img_SanPham.setImageBitmap(bitmap);
         //
         String outTongTien = String.format("%,.0f", sanPham.getPrice());
-        holder.GiaTien.setText(outTongTien + "k");
+        holder.GiaTien.setText(outTongTien + ""); //bỏ chữ K
 
 //        Set sự kiện Onclick cho các Button
 //        Buton xem sản phẩm
@@ -83,7 +83,7 @@ public class AdapterSanPham extends RecyclerView.Adapter<AdapterSanPham.UserView
             @Override
             public void onClick(View v) {
 //                Khởi tạo Model
-                GioHang gioHang = new GioHang(1, sanPham.getId(), 1, "N", sanPham.getPrice());
+                GioHang gioHang = new GioHang(1, sanPham.getId(), 1, "", sanPham.getPrice()); //bỏ size mặc định "N"
 //                Check Valid SP (SanPham.ID, Size)
                 ArrayList<GioHang> outList = daoGioHang.checkValidGioHang(gioHang);
 //                Toast.makeText(context, outList.size() + "", Toast.LENGTH_SHORT).show();

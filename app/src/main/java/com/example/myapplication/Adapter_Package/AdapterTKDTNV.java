@@ -49,7 +49,7 @@ public class AdapterTKDTNV extends RecyclerView.Adapter<AdapterTKDTNV.ViewHolder
         double doanhThu = hoaDon.getThanhTien();
         String outDoanhThu = String.format("%,.0f", doanhThu);
         //String subDoanhThu = outDoanhThu.substring(0, (outDoanhThu.length() - 2));
-        holder.txtTkdtThanhTien.setText(outDoanhThu + "K VNĐ");
+        holder.txtTkdtThanhTien.setText(outDoanhThu + " VNĐ");  //bỏ chữ K
 
         if (position == (listHoaDon.size() - 1)){
             holder.bottomViewTkdt.setVisibility(View.GONE);
@@ -89,7 +89,7 @@ public class AdapterTKDTNV extends RecyclerView.Adapter<AdapterTKDTNV.ViewHolder
 
                 double doanhThu = daoLuuHD.tongThuHD(hoaDon.getMaHoaDon());
                 String outDoanhThu = String.format("%,.0f", doanhThu);
-                txtHDTongTien.setText(outDoanhThu + " k");
+                txtHDTongTien.setText(outDoanhThu + " "); //bỏ chữ K
 
 
                 btnHoaDonXN.setVisibility(View.GONE);
