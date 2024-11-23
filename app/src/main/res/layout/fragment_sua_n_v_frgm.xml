@@ -58,8 +58,7 @@
                     style="@style/edt_TextBox2"
                     android:layout_marginTop="5dp"
                     android:hint="Họ và tên"
-                    android:background="@drawable/bo_edt"
-                    android:textColorHint="@color/black" />
+                    android:background="@drawable/bo_edt"/>
 
                 <RelativeLayout
                     android:id="@+id/viewSuaMK"
@@ -74,8 +73,7 @@
                         style="@style/edt_TextBox2"
                         android:hint="Mật khẩu"
                         android:inputType="textPassword"
-                        android:background="@drawable/bo_edt"
-                        android:textColorHint="@color/black" />
+                        android:background="@drawable/bo_edt"/>
                     <ImageView
                         android:id="@+id/img_hide"
                         android:layout_width="wrap_content"
@@ -93,10 +91,8 @@
                     android:layout_marginTop="15dp"
                     android:hint="Số điện thoại"
                     android:inputType="number"
-
                     android:maxLength="10"
-                    android:background="@drawable/bo_edt"
-                    android:textColorHint="@color/black" />
+                    android:background="@drawable/bo_edt" />
 
 
 
@@ -107,8 +103,7 @@
                     android:hint="Năm sinh"
                     android:inputType="number"
                     android:maxLength="4"
-                    android:background="@drawable/bo_edt"
-                    android:textColorHint="@color/black" />
+                    android:background="@drawable/bo_edt" />
 
             </LinearLayout>
 

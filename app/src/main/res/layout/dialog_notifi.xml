@@ -6,6 +6,7 @@
     >
 
     <LinearLayout
+        android:padding="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#964B00"
@@ -41,7 +42,7 @@
             android:paddingRight="20dp"
             android:text="Đóng"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="23dp"
             android:textStyle="bold" />
     </LinearLayout>
 
