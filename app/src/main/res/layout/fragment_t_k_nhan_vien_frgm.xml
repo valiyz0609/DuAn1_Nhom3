@@ -103,9 +103,7 @@
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            />
-
+            android:layout_marginLeft="10dp"/>
         <TextView
             android:id="@+id/txtTKNVSoLg"
             style="@style/edt_Label"
@@ -115,8 +113,7 @@
             android:text="00"
             android:textSize="25dp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black"/>
     </LinearLayout>
 
 
