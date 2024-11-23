@@ -35,7 +35,7 @@
             android:layout_toRightOf="@+id/cardview_img"
             android:paddingLeft="10dp"
             android:paddingRight="0dp"
-            android:text="Bạc sỉu"
+            android:text="Tên"
             android:textColor="@color/black"
             android:textSize="18dp" />
 
@@ -50,7 +50,7 @@
             android:layout_toRightOf="@+id/cardview_img"
             android:paddingLeft="10dp"
             android:paddingRight="0dp"
-            android:text="29.000đ"
+            android:text="giá"
             android:textColor="@color/black"
             android:textSize="15dp" />
 
