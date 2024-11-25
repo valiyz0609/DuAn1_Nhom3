@@ -65,9 +65,7 @@
                     style="@style/edt_TextBox2"
                     android:hint="Tên sản phẩm"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/bo_edt"
-                    android:textColorHint="@color/black"
-                    />
+                    android:background="@drawable/bo_edt"/>
 
             </LinearLayout>
 
@@ -85,7 +83,6 @@
                     android:maxLength="7"
                     android:inputType="number"
                     android:layout_marginTop="5dp"
-                    android:textColorHint="@color/black"
                     android:background="@drawable/bo_edt"
                     />
 
@@ -103,7 +100,6 @@
                     style="@style/edt_TextBox2"
                     android:hint="Nhập loại Sản Phẩm"
                     android:layout_marginTop="5dp"
-                    android:textColorHint="@color/black"
                     android:background="@drawable/bo_edt"
                     />
 
@@ -121,7 +117,6 @@
                     style="@style/edt_TextBox2"
                     android:hint="Mô tả"
                     android:layout_marginTop="5dp"
-                    android:textColorHint="@color/black"
                     android:lines="2"
                     android:maxLines="2"
                     android:minLines="2"

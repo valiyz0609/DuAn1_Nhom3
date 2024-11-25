@@ -54,8 +54,7 @@
                 style="@style/edt_TextBox2"
                 android:layout_marginTop="5dp"
                 android:hint="Tên Loại"
-                android:background="@drawable/bo_edt"
-                android:textColorHint="@color/black" />
+                android:background="@drawable/bo_edt"/>
 
         </LinearLayout>
 

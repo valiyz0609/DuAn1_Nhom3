@@ -6,43 +6,44 @@
     >
 
     <LinearLayout
+        android:padding="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#964B00"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
         android:gravity="center"
         android:orientation="vertical"
-        >
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
 
         <TextView
             style="@style/edt_Label"
-            android:text="Thông báo"
-            android:textStyle="bold"
             android:padding="0dp"
-            />
+            android:text="Thông báo"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hiện chưa có thông báo nào!"
-            android:textSize="23dp"
-            android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            />
+            android:text="Hiện chưa có thông báo nào!"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
 
         <EditText
             android:id="@+id/btnDongNotifi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đóng"
-            android:textSize="25dp"
-            android:textColor="@color/white"
+            android:background="@drawable/bo_tron_edt"
+            android:backgroundTint="@color/white"
             android:editable="false"
             android:focusable="false"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
+            android:paddingRight="20dp"
+            android:text="Đóng"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 
