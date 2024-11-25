@@ -31,7 +31,7 @@
                 style="@style/edt_Label"
                 android:id="@+id/txtSuaNVTittle"
                 android:layout_width="match_parent"
-                android:text="Sửa nhân viên"
+                android:text="Sửa Sản Phẩm"
                 android:textAlignment="center"
                 android:layout_marginRight="30dp"
                 android:textColor="@color/white"
