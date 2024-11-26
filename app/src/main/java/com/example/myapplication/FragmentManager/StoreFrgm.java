@@ -79,9 +79,9 @@ public class StoreFrgm extends Fragment {
                     EditText btnDialogHuy = dialog.findViewById(R.id.btnDialogHuy);
                     EditText btnDialogXN = dialog.findViewById(R.id.btnDialogXN);
 
-                    dialog_confirm_content.setText("Bạn chắc chắn muốn xóa sản phẩm trong giỏ hàng!");
+                    dialog_confirm_content.setText("Bạn chắc chắn muốn xóa giỏ hàng!");
 
-//                Set Click Button Dialog Hủy
+//                Button hủy
                     btnDialogHuy.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
@@ -89,7 +89,7 @@ public class StoreFrgm extends Fragment {
                             dialog.dismiss();
                         }
                     });
-
+                // Button xác nhận xóa
                     btnDialogXN.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
@@ -103,8 +103,6 @@ public class StoreFrgm extends Fragment {
                         }
                     });
                     dialog.show();
-                    
-                    
                 }
             }
         });
@@ -120,7 +118,7 @@ public class StoreFrgm extends Fragment {
                     Toast.makeText(getContext(), "Vui lòng chọn sản phẩm!", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    //                Kiểm tra nhập tên khách hàng
+                    //    Kiểm tra nhập tên khách hàng
                     if (tenKH.isEmpty()){
                         edtGHTenKH.setHintTextColor(Color.RED);
                         edtGHTenKH.setError("Vui lòng nhập!");
@@ -146,7 +144,6 @@ public class StoreFrgm extends Fragment {
                         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
 //                    Ánh xạ View
-
                         EditText btnHoaDonHuy = dialog.findViewById(R.id.btnHoaDonHuy);
                         EditText btnHoaDonXN = dialog.findViewById(R.id.btnHoaDonXN);
 

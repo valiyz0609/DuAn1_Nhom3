@@ -1,6 +1,7 @@
 package com.example.myapplication.FragmentManager;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,11 +35,12 @@ public class LoaispFrgm extends Fragment {
 
         daoSanPham= new DAOSanPham(getContext());
         ArrayList<TheLoai> list = daoSanPham.getDSLSP();
-
+        Log.d("TAG", "onCreateView: "+list.size());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerloaisp.setLayoutManager(linearLayoutManager);
         AdapterLoaiSP adapterLoaiSP= new AdapterLoaiSP(getContext(), list,daoSanPham);
         recyclerloaisp.setAdapter(adapterLoaiSP);
+        adapterLoaiSP.notifyDataSetChanged();
         btnbackLoaisp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

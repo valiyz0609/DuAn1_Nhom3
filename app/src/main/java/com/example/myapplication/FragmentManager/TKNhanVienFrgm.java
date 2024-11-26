@@ -40,6 +40,7 @@ public class TKNhanVienFrgm extends Fragment {
         listNhanVien = daoLuuHD.tkNhanVien();
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recycler_TKNV.setLayoutManager(linearLayoutManager);
+        //set adapter cho recycler
         AdapterTKNV adapterTKNV = new AdapterTKNV(getContext(), listNhanVien);
         recycler_TKNV.setAdapter(adapterTKNV);
 
