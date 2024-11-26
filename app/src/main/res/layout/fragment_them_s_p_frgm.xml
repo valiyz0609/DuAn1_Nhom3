@@ -50,7 +50,7 @@
             android:layout_width="135dp"
             android:layout_height="135dp"
             android:layout_marginTop="25dp"
-            android:src="@drawable/addimg" />
+            android:src="@drawable/cafetrung" />
 
         <LinearLayout
             android:layout_width="match_parent"

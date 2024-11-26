@@ -303,7 +303,7 @@ public class TKDoanhThuFrgm extends Fragment {
 
 //                        Gọi thống kê tổng doanh thu
                         double doanhThu = daoLuuHD.getTongDoanhThu(dateStart, dateEnd, caseTK, maUserInput);
-                        String fDoanhThu = String.format("%,.0f k", doanhThu);
+                        String fDoanhThu = String.format("%,.0f ", doanhThu);
                         txtTongDoanhThu.setText(fDoanhThu);
 //                        Get ArrayList
                         listHD = daoLuuHD.getDSHoaDon(dateStart, dateEnd, caseTK, maUserInput);
@@ -346,7 +346,7 @@ public class TKDoanhThuFrgm extends Fragment {
         AdapterTKDT adapterTKDT = new AdapterTKDT(getContext(), listHD);
         recycler_TKDT.setAdapter(adapterTKDT);
         double doanhThu = daoLuuHD.getAllDoanhThu(2, maUserInput);
-        String fDoanhThu = String.format("%,.0f k", doanhThu);
+        String fDoanhThu = String.format("%,.0f ", doanhThu);
         txtTongDoanhThu.setText(fDoanhThu);
     }
 
@@ -354,7 +354,7 @@ public class TKDoanhThuFrgm extends Fragment {
         if (listHD.size() != 0){
             listHD.clear();
         }
-        txtTongDoanhThu.setText("0 k");
+        txtTongDoanhThu.setText("0 ");
         edtTKDTTenNV.setText(null);
         edtTuNgay.setText(null);
         edtDenNgay.setText(null);

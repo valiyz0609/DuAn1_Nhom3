@@ -51,7 +51,7 @@
                 <TextView
                     android:id="@+id/txtGHTenSP"
                     style="@style/edt_Label"
-                    android:text="tittle"
+                    android:text="tên"
                     android:textColor="@color/black"
                     android:textSize="19dp"
                     android:maxLength="200" />
@@ -59,7 +59,7 @@
                 <TextView
                     android:id="@+id/txtGHGia"
                     style="@style/edt_Label"
-                    android:text="tittle"
+                    android:text="giá"
                     android:textColor="@color/black"
                     android:textSize="16dp"
                     />

@@ -31,6 +31,8 @@
                 android:textColor="@color/black"
                 />
 
+
+
             <TextView
                 android:id="@+id/txtTknvTenNv"
                 android:layout_width="250dp"

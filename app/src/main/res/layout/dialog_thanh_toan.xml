@@ -4,17 +4,19 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
+    android:layout_margin="2dp"
+    android:padding="2dp"
     android:layout_marginLeft="30dp"
     android:layout_marginRight="30dp"
     >
 
     <LinearLayout
+        android:padding="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#D7AD84"
-        android:gravity="center_vertical"
-        >
+        android:background="#CE884D"
+        android:gravity="center_vertical">
 
 
         <TextView
