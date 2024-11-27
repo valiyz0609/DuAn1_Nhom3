@@ -367,9 +367,11 @@ public class TKDoanhThuFrgm extends Fragment {
     public void goneListTK(){
         if (listHD.size() == 0){
             layoutListDT.setVisibility(View.GONE);
+            Log.d(TAG, "tkAllDoanhThu: " + listHD.size());
         }
         else {
             layoutListDT.setVisibility(View.VISIBLE);
+            Log.d(TAG, "tkAllDoanhThu: " + listHD.size());
         }
     }
 

@@ -2,6 +2,7 @@ package com.example.myapplication.FragmentManager;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -88,6 +89,7 @@ public class ThemLSPFragm extends Fragment {
                         Toast.makeText(getContext(), "Thêm thành công!", Toast.LENGTH_SHORT).show();
                         edtAddSPLoai.setText(null);
                         edtAddSPLoai.setHintTextColor(Color.BLACK);
+                        Log.d("GG", "checkAdd: " + checkAdd);
                     }
                     else {
                         Toast.makeText(getContext(), "Fail!", Toast.LENGTH_SHORT).show();
