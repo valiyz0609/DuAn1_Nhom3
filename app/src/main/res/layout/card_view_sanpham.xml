@@ -11,6 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#964B00"
         android:padding="5dp">
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview_img"
@@ -36,7 +37,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="0dp"
             android:text="Tên"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18dp" />
 
         <TextView
@@ -51,7 +52,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="0dp"
             android:text="giá"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="15dp" />
 
         <LinearLayout

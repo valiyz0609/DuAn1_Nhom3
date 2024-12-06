@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:background="#964B00"
         android:paddingVertical="4dp">
 
         <LinearLayout
@@ -52,7 +53,7 @@
                     android:id="@+id/txtGHTenSP"
                     style="@style/edt_Label"
                     android:text="tên"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="19dp"
                     android:maxLength="200" />
 
@@ -60,7 +61,7 @@
                     android:id="@+id/txtGHGia"
                     style="@style/edt_Label"
                     android:text="giá"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16dp"
                     />
 
