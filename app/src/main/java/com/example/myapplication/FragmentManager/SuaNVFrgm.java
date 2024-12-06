@@ -50,7 +50,7 @@ public class SuaNVFrgm extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_sua_n_v_frgm, container, false);
 
-//        Ánh xạ
+//        Ánh xạ các view sửa
         edtSuaTenNV = view.findViewById(R.id.edtSuaTenNV);
         edtSuaMatKhau = view.findViewById(R.id.edtSuaMatKhau);
         edtSuaSDT = view.findViewById(R.id.edtSuaSDT);
@@ -69,6 +69,7 @@ public class SuaNVFrgm extends Fragment {
         int maUser = pref.getInt("MA", 0);
         User userN = daoUser.getUser(maUser);
         int quyenUser = userN.getMaChucVu();
+        Log.d(TAG, "onCreateView: " + quyenUser);
 
 //        Set tittle, ẩn Mật khẩu nếu Account hiện tại là Admin
         if (quyenUser == user.getMaChucVu()){
@@ -174,10 +175,6 @@ public class SuaNVFrgm extends Fragment {
         btnHuySuaNV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                edtSuaTenNV.setText(user.getFullName());
-//                edtSuaMatKhau.setText(null);
-//                edtSuaSDT.setText(user.getSDT());
-//                edtSuaNamSinh.setText(String.valueOf(user.getNamSinh()));
                 loadFragment(new ViewUserInforFrgm(user));
             }
         });

@@ -46,7 +46,8 @@ public class ThemNhanVienFrgm extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-//        Ánh xạ các View
+//        Ánh xạ
+
         edtName = view.findViewById(R.id.edTenNhanVien);
         edtUser = view.findViewById(R.id.edUsername);
         edtPassword = view.findViewById(R.id.edPassword);
@@ -55,7 +56,9 @@ public class ThemNhanVienFrgm extends Fragment {
         btnAddThemNV = view.findViewById(R.id.btnAddThemNV);
         btnHuyThemNV = view.findViewById(R.id.btnHuyThemNV);
         daoUser = new DAOUser(getActivity());
-//        Sự kiện Button Thêm OnClick
+
+//        Sự kiện Button Thêm
+
         btnAddThemNV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,8 +71,11 @@ public class ThemNhanVienFrgm extends Fragment {
                 String namSinh = edtNamSinh.getText().toString();
 
 //                Check Form
+
                 if (checkEdt()) {
+
 //                    Kiểm tra trùng lặp UserName
+
                     int checkValid = daoUser.checkValid(userName);
                     if (checkValid != 0) {
 //                        UserName đã tồn tại -> Thông báo lỗi, Nhập lại

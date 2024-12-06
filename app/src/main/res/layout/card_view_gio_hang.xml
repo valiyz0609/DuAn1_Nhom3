@@ -91,7 +91,7 @@
 
                 android:text="00"
                 android:textAlignment="center"
-                android:textColor="@color/red"
+                android:textColor="#EF2626"
                 android:textStyle="bold" />
 
             <ImageView

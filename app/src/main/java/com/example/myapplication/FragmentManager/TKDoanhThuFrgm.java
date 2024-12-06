@@ -161,7 +161,7 @@ public class TKDoanhThuFrgm extends Fragment {
             }
         });
 
-//        Set Data cho edtTenNV
+//        Set dữ liệu cho chỉnh sửa nhân viên
         ArrayList<User> listUser = daoUser.getAllUser();
         ArrayList<String> listTenUser = new ArrayList<>();
         ArrayList<Integer> listMaUser = new ArrayList<>();
@@ -174,13 +174,14 @@ public class TKDoanhThuFrgm extends Fragment {
             }
         }
 
+        Log.d(TAG, "onCreateView: " + listTenUser.size());
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
                 (getContext(), android.R.layout.select_dialog_item, listTenUser);
 
         edtTKDTTenNV.setThreshold(1);
         edtTKDTTenNV.setAdapter(adapter);
 
-//        Get ngày bắt đầu
+//        Lấy ngày bắt đầu thống kê
         edtTuNgay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -188,6 +189,7 @@ public class TKDoanhThuFrgm extends Fragment {
                 int ngay = calendar.get(calendar.DAY_OF_MONTH);
                 int thang = calendar.get(calendar.MONTH);
                 int nam = calendar.get(calendar.YEAR);
+                // Sử dụng datepicker để chọn ngày tháng
                 DatePickerDialog datePickerDialog = new DatePickerDialog(getContext(), new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int mYear, int mMonth, int mDay) {
@@ -205,14 +207,14 @@ public class TKDoanhThuFrgm extends Fragment {
             }
         });
 
-//        Get ngày kết thúc
+//        Lấy ngày kết thúc thống kê, cũng sử dụng datepicker để chọn ngày tháng
         edtDenNgay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Calendar calendar = Calendar.getInstance();
-                int ngay = calendar.get(calendar.DAY_OF_MONTH);
-                int thang = calendar.get(calendar.MONTH);
-                int nam = calendar.get(calendar.YEAR);
+                int ngaye = calendar.get(calendar.DAY_OF_MONTH);
+                int thange = calendar.get(calendar.MONTH);
+                int name = calendar.get(calendar.YEAR);
                 DatePickerDialog datePickerDialog = new DatePickerDialog(getContext(), new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int mYear, int mMonth, int mDay) {
@@ -225,12 +227,12 @@ public class TKDoanhThuFrgm extends Fragment {
                         dateEnd = date;
                         ipDateEnd = true;
                     }
-                }, nam, thang, ngay);
+                }, name, thange, ngaye);
                 datePickerDialog.show();
             }
         });
 
-//        Sự kiện Click button Thống kê
+//  Sự kiện Click button Thống kê
         btnThongKe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -238,14 +240,14 @@ public class TKDoanhThuFrgm extends Fragment {
                 boolean checkDoanhThu = true;
 //                Check Tên nhân viên trống nếu CaseTK = 3;
                 if (caseTK == 3){
-//                    Lấy tên nhân viên từ Edittext
+//  Lấy tên nhân viên từ Edittext
                     tenNVInput = edtTKDTTenNV.getText().toString();
                     if (tenNVInput.isEmpty()){
                         checkDoanhThu = false;
                         edtTKDTTenNV.setHintTextColor(Color.RED);
                         edtTKDTTenNV.setError("Vui lòng nhập!");
                     } else {
-//                    Check tên nhân viên không tồn tại
+//  Check tên nhân viên không tồn tại
                         ArrayList<User> listNv = daoUser.getAllUser();
                         for (int i = 0; i < listNv.size(); i++) {
                             if (listNv.get(i).getFullName().equals(tenNVInput)){
@@ -278,6 +280,7 @@ public class TKDoanhThuFrgm extends Fragment {
                     Date dDateS = null;
                     try {
                         dDateS = simpleDateFormat.parse(dateStart);
+                        Log.d(TAG, "dDateS: " + dDateS);
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
@@ -312,6 +315,7 @@ public class TKDoanhThuFrgm extends Fragment {
                         recycler_TKDT.setLayoutManager(layoutManager);
                         AdapterTKDT adapterTKDT = new AdapterTKDT(getContext(), listHD);
                         recycler_TKDT.setAdapter(adapterTKDT);
+
                     }
                     else {
                         Toast.makeText(getContext(), "Ngày bắt đầu phải nhỏ hơn hoặc bằng ngày kết thúc", Toast.LENGTH_SHORT).show();
@@ -363,9 +367,11 @@ public class TKDoanhThuFrgm extends Fragment {
     public void goneListTK(){
         if (listHD.size() == 0){
             layoutListDT.setVisibility(View.GONE);
+            Log.d(TAG, "tkAllDoanhThu: " + listHD.size());
         }
         else {
             layoutListDT.setVisibility(View.VISIBLE);
+            Log.d(TAG, "tkAllDoanhThu: " + listHD.size());
         }
     }
 
